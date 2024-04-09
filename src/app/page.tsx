@@ -57,11 +57,15 @@ export default function Home() {
                     alt="product-preview"
                     width={1364}
                     height={866}
+                    quality={100}
+                    className="rounded bg-white p-2 sm:p-8 md:p-20 shadow-xl ring-1 ring-gray-900/10"
                   />
                 </div>
               </div>
             </div>
           </div>
+
+          <div></div>
         </div>
       </div>
     </>
