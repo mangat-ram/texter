@@ -1,4 +1,5 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -15,6 +16,18 @@ export default function Home() {
       >
         Chat with your <span className="text-blue-600">documents</span> in seconds
       </h1>
+      <p
+        className="mt-5 max-w-prose text-zinc-700 sm:text-lg"
+      >
+        Texter allows you to have conversation with your PDFs.Simply upload your file and start asking questions right away.
+      </p>
+
+      <Link
+        href="/dashboard"
+        target="_blank"
+      >
+        Get Started
+      </Link>
     </MaxWidthWrapper>
   );
 }
