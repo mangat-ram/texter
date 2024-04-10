@@ -2,7 +2,8 @@ import React from 'react'
 import MaxWidthWrapper from './MaxWidthWrapper'
 import Link from 'next/link'
 import { buttonVariants } from './ui/button'
-import { LogIn } from 'lucide-react'
+import { LoginLink, RegisterLink } from '@kinde-oss/kinde-auth-nextjs/server'
+import { ArrowRight } from 'lucide-react'
 
 const NavBar = () => {
   return (
@@ -20,12 +21,28 @@ const NavBar = () => {
           {/*Todo Add Mobile navbar*/}
           <div className="hidden items-center space-x-4 sm:flex">
             <>
-              <Link href="/pricing" className={buttonVariants({
+              <Link href="/pricing" 
+              className={buttonVariants({
                 variant:"ghost",
                 size:"sm"
               })}>
                 Pricing
               </Link>
+              <LoginLink
+                className={buttonVariants({
+                variant:"ghost",
+                size:"sm"
+              })}
+              >
+                Sign In
+              </LoginLink>
+              <RegisterLink
+                className={buttonVariants({
+                size:"sm"
+              })}
+              >
+                Get Started <ArrowRight className='ml-1.5 h-5 w-5' />
+              </RegisterLink>
             </>
           </div>
         </div>
