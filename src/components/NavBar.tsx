@@ -31,7 +31,7 @@ const NavBar = () => {
               <LoginLink
                 className={buttonVariants({
                 variant:"ghost",
-                size:"sm"
+                size:"sm",
               })}
               >
                 Sign In
