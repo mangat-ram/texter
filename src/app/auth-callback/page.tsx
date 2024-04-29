@@ -8,10 +8,14 @@ const Page = () => {
   const searchParams = useSearchParams();
   const origin = searchParams.get('origin')
 
-  const { data,isLoading } = trpc.test.useQuery()
-
-  return (
-    <div>Page</div>
+  const { data,isLoading } = trpc.authCallback.useQuery(undefined,{
+    onSuccess : ({success}) => {
+        if(success){
+          //user is sunced to database
+          router.push(origin ? `/${origin}` : '/dashboard')
+        }
+      } 
+    }
   )
 }
 
