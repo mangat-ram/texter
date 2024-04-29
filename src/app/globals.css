@@ -83,3 +83,8 @@
   font-family: featureDeck;
   src: url("../../public/fonts/63ecf53e5808c05fd5a2733a_FeatureDeck-Regular-App.ttf");
 }
+
+@font-face {
+  font-family: chubbo;
+  src: url("../../public/fonts/Chubbo-Variable.ttf");
+}

@@ -20,6 +20,7 @@ const config = {
     extend: {
       fontFamily: {
         'featureDeck': ['featureDeck'],
+        'chubbo':['chubbo']
       },
       colors: {
         border: "hsl(var(--border))",
