@@ -14,31 +14,31 @@ const NavBar = () => {
         <div
           className="flex h-20 items-center justify-between border-b border-zinc-200"
         >
-          <Link href="/" className="flex z-40 font-bold font-featureDeck text-3xl">
+          <Link href="/" className="flex z-40 font-bold font-featureDeck text-4xl">
             <span>Texter.</span>
           </Link>
 
           {/*Todo Add Mobile navbar*/}
-          <div className="hidden items-center space-x-4 sm:flex">
+          <div className="hidden items-center space-x-4 sm:flex font-chubbo font-bold">
             <>
               <Link href="/pricing" 
               className={buttonVariants({
                 variant:"ghost",
-                size:"sm"
+                size:"xl"
               })}>
                 Pricing
               </Link>
               <LoginLink
                 className={buttonVariants({
                 variant:"ghost",
-                size:"sm",
+                size:"xl",
               })}
               >
                 Sign In
               </LoginLink>
               <RegisterLink
                 className={buttonVariants({
-                size:"sm"
+                size:"xl"
               })}
               >
                 Get Started<ArrowRight className='ml-1.5 h-5 w-5' />
